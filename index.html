@@ -4,19 +4,38 @@
 	<title> M. Sheker - Home </title>
 	<meta charset= "utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-		.buttons {display:inline;}
-		.professional	{background-color:#33CCFF;}
+	<style>		
+		.buttons 	{display:inline;}
+		.profsect	{background-color:#6699CC;
+					height:200px;
+					width:105px;
+					position:relative;
+					left:5%;
+					border:3px;
+					border-color:black}
+		.prof		{transform: rotate(-90deg);
+					position:relative;
+					left:-70%;
+					top:50%}
+		.personal	{transform: rotate(-90deg);
+					position:relative;
+					left:-80%;
+					top:50%}
 	</style>
 </head>
 	
 <body>
-	<h1>Miguel Agustin Lim Sheker</h1>
+	<div class="head">
+		<h1 class="title">Miguel Agustin Lim Sheker</h1>
+	</div>
 	<hr>
-	<div class="professional">
-		<h2>Professional</h2>
-		<a href="resume.html">Resume</a>
+	<div class="profsect">
+		<h2 class="prof">Professional</h2>
 		<ul>
+			<li class="buttons">
+				<a href="resume.html" style="">
+				<img src="interface.png" alt="Resume" height="32" width="32">
+				</a>
 			<li class="buttons">
 				<a href="https://github.com/msheker">
 				<img src= "GitHub-Mark-32px.png" height="32" width="32" alt="GitHub">
@@ -29,16 +48,21 @@
 			</li>
 		</ul>
 	</div>
-	<div class="tab">
-		<h2>Personal</h2>
+	<div>
+		<h2 class="personal"> Personal</h2>
 	</div>
-	<div id="contact">
-		<h2>Contact me</h2>
-		<p>Email: </p>
-		<ul>
+	<div class="contact">
+		<h2 style="position:relative; left:5%; top:-2.5%">Contacts</h2>
+		<ul style="position:relative; top:-15%; font-size:18px">
 			<li>mig.sheker@gmail.com </li>
 			<li>msheker@ucsd.edu</li>
+			<li>migs0223@gmail.com</li>
 		</ul>
+	</div>
+	
+	<div class="foot">
+	<hr>
+	Document icon made by <a href="https://www.flaticon.com/free-icon/file_607674?term=document&page=4&position=6" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 	</div>
 </body>
 </html>
