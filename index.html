@@ -3,66 +3,82 @@
 <head>
 	<title> M. Sheker - Home </title>
 	<meta charset= "utf-8"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>		
-		.buttons 	{display:inline;}
+		body 		{background-color:#99CCFF;}
+		.head		{background-color:#336699;
+					height:175px}
+		.title		{position:relative;
+					top:15%;
+					left:5%}
+		.contact	{height:125px;
+					width:150px;
+					background-color:#6699CC;
+					position:relative;
+					top:12.5%}
+		.buttons 	{list-style:none;}
 		.profsect	{background-color:#6699CC;
 					height:200px;
 					width:105px;
 					position:relative;
-					left:5%;
-					border:3px;
-					border-color:black}
+					left:5%;}
 		.prof		{transform: rotate(-90deg);
 					position:relative;
-					left:-70%;
-					top:50%}
+					top:150px}
 		.personal	{transform: rotate(-90deg);
 					position:relative;
-					left:-80%;
-					top:50%}
+					top:-50px}
 	</style>
 </head>
 	
 <body>
-	<div class="head">
-		<h1 class="title">Miguel Agustin Lim Sheker</h1>
-	</div>
-	<hr>
-	<div class="profsect">
-		<h2 class="prof">Professional</h2>
-		<ul>
-			<li class="buttons">
-				<a href="resume.html" style="">
-				<img src="interface.png" alt="Resume" height="32" width="32">
-				</a>
-			<li class="buttons">
-				<a href="https://github.com/msheker">
-				<img src= "GitHub-Mark-32px.png" height="32" width="32" alt="GitHub">
-				</a>
-			</li>
-			<li class="buttons">
-				<a href="https://linkedin.com/in/msheker"> 
-				<img src="In-Black-14px.png" height="32" width="32" alt="LinkedIn">
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div>
-		<h2 class="personal"> Personal</h2>
-	</div>
-	<div class="contact">
-		<h2 style="position:relative; left:5%; top:-2.5%">Contacts</h2>
-		<ul style="position:relative; top:-15%; font-size:18px">
-			<li>mig.sheker@gmail.com </li>
-			<li>msheker@ucsd.edu</li>
-			<li>migs0223@gmail.com</li>
-		</ul>
+	<div class="container-fluid">
+		<div class="head row">
+			<div class="col-md-8 col-sm-8">
+				<h1 class="title">Miguel Agustin Lim Sheker</h1>
+			</div>
+			<div class="contact col-md-4 col-sm-4">
+				<h2 style="position:relative; left:5%">Contacts</h2>
+				<ul style="position:relative; top:-10%; font-size:18px">
+					<li>mig.sheker@gmail.com </li>
+					<li>msheker@ucsd.edu</li>
+					<li>migs0223@gmail.com</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-1">
+				<h2 class="prof">Professional</h2>
+			</div>
+			<div class="profsect col-md-2">
+				<ul style="position:relative; top:25%">
+					<li class="buttons">
+						<a href="resume.html" style="">
+						<img src="file-earmark-text.svg" alt="Resume" height="32" width="32">
+						</a>
+					</li>
+					<li class="buttons">
+						<a href="https://github.com/msheker">
+						<img src= "GitHub-Mark-32px.png" height="32" width="32" alt="GitHub">
+						</a>
+					</li>
+					<li class="buttons">
+						<a href="https://linkedin.com/in/msheker"> 
+						<img src="In-Black-14px.png" height="32" width="32" alt="LinkedIn">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<h2 class="personal"> Personal</h2>
+			</div>
+		</div>
 	</div>
 	
-	<div class="foot">
-	<hr>
-	Document icon made by <a href="https://www.flaticon.com/free-icon/file_607674?term=document&page=4&position=6" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
