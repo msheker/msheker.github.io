@@ -1,0 +1,18 @@
+.bg_color      {background-color: #768F9F}
+.nav_color     {background-color: #336699;}
+
+.color1        {background-color: #6699CC;}
+.color2        {background-color: #79CAFF;}
+.color3        {background-color: #BDE5FF;}
+
+#edu           {visibility: hidden;
+                padding-top:10%}
+#exp           {visibility: hidden;}
+
+#professional  {visibility: hidden;}
+#resume        {height: 80vh;
+                padding-top: 7.5%}
+
+#search2       {visibility: hidden;}
+
+.section       {height:90vh}

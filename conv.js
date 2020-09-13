@@ -1,3 +1,11 @@
+
+hex = { 'f':15,
+        'e':14,
+        'd':13,
+        'c':12,
+        'b':11,
+        'a':10  }
+
 function base_change(str, base)
 {
     var result = 0
@@ -8,13 +16,6 @@ function base_change(str, base)
     }
     return result/16
 }
-
-hex = { 'f':15,
-        'e':14,
-        'd':13,
-        'c':12,
-        'b':11,
-        'a':10  }
 
 function conv( str)
 {
@@ -39,12 +40,18 @@ function conv( str)
     return base_change(str, 16)
 }
 
-d3.select("input").on("change", event =>
+d3.select("#search1").on("change", event =>
 {
     var val = d3.event.target.value
     console.log(val)
-    d3.select("#output").text(conv(val))
-    d3.event.target.value = ""
+    d3.event.target.value = conv(val)
+})
+
+d3.select("#search2").on("change", event =>
+{
+    var val = d3.event.target.value
+    console.log(val)
+    d3.event.target.value = conv(val)
 })
 
 d3.select("#enter").on("click", event =>
