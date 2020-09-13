@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> M. Sheker - Home </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+    <div class="container-lg">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #6699CC;">
+            <a class="navbar-brand" href="#">Miguel A. Sheker </a>
+            <form class="form-inline">
+                <button class="btn btn-sm btn-outline-dark" type="button" data-toggle="collapse" data-target="#professional" aria-controls="#professional" aria-expanded="false" aria-label="Toggle navigation"> Professional </button>
+            </form>
+
+            <!--
+            <form class="form-inline">
+                <button class="btn btn-sm btn-outline-dark" type="button" data-toggle="collapse" data-target="personal" aria-controls="personal" aria-expanded="false" aria-label="Toggle navigation"> Personal </button>
+            </form>
+            -->
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" id="enter" type="submit"></button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="professional" aria-labelledby="professional">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="https://linkedin.com/in/msheker">
+                            <img src="img/LI-In-Bug.png" height="32" width="36" alt="LinkedIn"> LinkedIn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/msheker">
+                            <img src="img/GitHub-Mark-32px.png" height="32" width="32" alt="GitHub"> GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume">
+                            <img src="img/file-earmark-text.svg" alt="Resume" height="32" width="32"> Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--
+            <div class="collapse navbar-collapse" id="personal" aria-labelledby="personal">
+            </div>
+            -->
+        </nav>
+
+        <div class="row">
+            <div class="col">
+                <input type="text" style="display:none;">
+                <h5 id="output"></h5>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="dropdown-menu">
+                <h6 class="dropdown-header">Dropdown header</h6>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    <h5 class="card-title">University of California, Irvine (UCI)</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">March 2020—September 2020 </h6>
+                </div>
+                <div class="card-body">
+                    <p>Division of Continuing Education, Data Analytics Boot Camp</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    <h5 class="card-title">University of California, San Diego (UCSD) </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">September 2013—October 2019</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Major: Math-Computer Science</li>
+                        <li class="list-group-item"> Minor: Economics </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="row">
+Student, UCI Data Analytics Boot Camp March 2020—September 2020
+Took part in an intensive 24 week program, completing projects using techniques used in
+data analytics, data visualization, data engineering and data science.
+Data Editor, UCSD Guardian September 2016—June 2018
+Led data section to research stories, clean data, and visualize datasets for publication using
+Python libraries, including pandas, numpy, matplotlib and bokeh. Taught python
+programming and visualization methods to team members. Created scripts to automate
+visualization of frequently used datasets.
+Data Science Intern, FASTech LLC/FASTechMedia Inc. January 2017—November 2017
+Retrained an existing Netflix machine learning model emulating a person’s ability to
+distinguish differences in video quality. Wrote bash and python scripts automating video
+compression and quality tests. Produced visualizations appearing in the company’s white
+paper on transparency in the video compression industry. Optimized and verified the
+quality of a set of videos used in an online seminar by Jan Ozer, a video encoding expert.
+Market Food Service Worker, Roger’s Market (UCSD) September 2015–June 2016
+Duties include customer service, preparing food and beverage, maintaining the retail sales
+floor, taking inventory, sanitation, cleaning, organizing the work area and maintaining logs.
+        </div>
+    </div>
+-->
+
+        <script type="text/javascript" src="conv.js"> </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

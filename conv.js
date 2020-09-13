@@ -9,33 +9,19 @@ function base_change(str, base)
     return result/16
 }
 
+hex = { 'f':15,
+        'e':14,
+        'd':13,
+        'c':12,
+        'b':11,
+        'a':10  }
+
 function conv( str)
 {
-    str = str.split("")
+    str = str.toLowerCase().split("")
     str = str.map((dig)=>{
-        if (dig === 'f')
-        {
-            return 15
-        }
-        else if (dig === 'e')
-        {
-            return 14
-        }
-        else if (dig === 'd')
-        {
-            return 13
-        }
-        else if (dig === 'c')
-        {
-            return 12
-        }
-        else if (dig === 'b')
-        {
-            return 11
-        }
-        else if (dig === 'a')
-        {
-            return 10
+        if (dig in hex){
+            return hex[dig]
         }
         else {
             try {
@@ -53,11 +39,15 @@ function conv( str)
     return base_change(str, 16)
 }
 
-function handleChange(event)
+d3.select("input").on("change", event =>
 {
-    console.log(d3.event.target.value)
-    d3.select("#output").text(conv(d3.event.target.value))
-}
+    var val = d3.event.target.value
+    console.log(val)
+    d3.select("#output").text(conv(val))
+    d3.event.target.value = ""
+})
 
-console.log("start")
-d3.select("input").on("change",handleChange)
+d3.select("#enter").on("click", event =>
+{
+    console.log(d3.select("input").html());
+})
