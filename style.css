@@ -1,3 +1,15 @@
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
 .bg_color      {background-color: #768F9F}
 .nav_color     {background-color: #336699;}
 
@@ -10,9 +22,11 @@
 #exp           {visibility: hidden;}
 
 #professional  {visibility: hidden;}
-#resume        {height: 80vh;
+#resume        {height: 100vh;
                 padding-top: 7.5%}
 
 #search2       {visibility: hidden;}
 
 .section       {height:90vh}
+.resbtn        {height:100px;
+                width:200px}

@@ -38,6 +38,7 @@ d3.select("#profbtn").on("click", event => {
         }
     })
 
+    
     d3.select("#search2").style("visibility",d => {
         if (prof_i % 2) {
             return "visible"
