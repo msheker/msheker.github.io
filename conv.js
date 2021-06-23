@@ -40,17 +40,12 @@ function conv( str)
     return base_change(str, 16)
 }
 
-d3.select("#search1").on("change", event =>
+d3.select("#search").on("change", event =>
 {
     var val = d3.event.target.value
     console.log(val)
-    d3.event.target.value = conv(val)
-})
-
-d3.select("#search2").on("change", event =>
-{
-    var val = d3.event.target.value
-    console.log(val)
+    //d3.select("#output").text(conv(val))
+    //d3.event.target.value = ""
     d3.event.target.value = conv(val)
 })
 

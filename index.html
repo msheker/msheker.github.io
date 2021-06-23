@@ -4,163 +4,69 @@
 <head>
     <title> M. Sheker - Home </title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
-<body class="bg_color">
-    <div class="container-lg ">
-        <nav class="navbar sidenav navbar-expand-lg navbar-light nav_color">
-            <a class="navbar-brand " href="#">Miguel A. Sheker </a>
+<body>
 
-            <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="#fat">@fat</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#mdo">@mdo</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#one">one</a>
-        <a class="dropdown-item" href="#two">two</a>
-        <div role="separator" class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#three">three</a>
-      </div>
-    </li>
-  </ul>
-
-            <form class="form-inline" style="padding:5px">
-                <button class="btn btn-sm btn-outline-light" type="button" data-toggle="collapse" data-target="#professional" aria-controls="#professional" aria-expanded="false" aria-label="Toggle navigation" id="profbtn"> Professional </button>
-            </form>
-
-            <form class="form-inline" style="padding:5px">
-                <button class="btn btn-sm btn-outline-light" type="button" data-toggle="collapse" data-target="personal" aria-controls="personal" aria-expanded="false" aria-label="Toggle navigation"> Personal </button>
-            </form>
-
-            <div class="collapse navbar-collapse bg-light" id="professional" aria-labelledby="professional">
-                <ul class="navbar-nav nav_prof">
-                    <li class="nav-item" style="padding:5px">
-                        <a href="#resume">
-                            <img src="img/file-earmark-text.svg" alt="Resume" height="32" width="32"> Resume
-                        </a>
-                    </li>
-                    <li class="nav-item" style="padding:5px">
-                        <a href="https://linkedin.com/in/msheker">
-                            <img src="img/LI-In-Bug.png" height="32" width="36" alt="LinkedIn"> LinkedIn
-                        </a>
-                    </li>
-                    <li class="nav-item" style="padding:7.5px">
-                        <a href="https://github.com/msheker">
-                            <img src="img/GitHub-Mark-32px.png" height="32" width="32" alt="GitHub"> GitHub
-                        </a>
-                    </li>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 200px; height: 100%; position: fixed; bottom: 0;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <span class="fs-4">Miguel Sheker</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li class="my-2">
+                <button class="btn d-inline-flex align-items-center text-white" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#prof-collapse" aria-controls="prof-collapse">Professional</button>
+                <ul class="list-unstyled ps-3 collapse show" id="prof-collapse" style="">
+                    <li><a class="d-inline-flex align-items-center rounded" href="#typography">Resume</a></li>
+                    <li><a class="d-inline-flex align-items-center rounded" href="https://www.linkedin.com/in/msheker/">LinkedIn</a></li>
+                    <li><a class="d-inline-flex align-items-center rounded" href="https://github.com/msheker">GitHub</a></li>
                 </ul>
-            </div>
-
-            <div class="collapse navbar-collapse" id="personal" aria-labelledby="personal">
-            </div>
-
-            <form class="form-inline" id="search" style="padding:2.5px">
-                <input class="form-control mr-sm-2" type="search" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" id="enter" type="submit"></button>
-            </form>
-        </nav>
-
-        <div class="jumbotron jumbotron-fluid section" id="home">
-            <div class="container">
-                <h1 class="display-4"></h1>
-            </div>
+            </li>
+            <li>
+                <form class="" action="index.html" method="post">
+                    <input type="text" name="" value="">
+                    <button type="button" name="button">.</button>
+                </form>
+            </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>mdo</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
         </div>
+    </div>
+    <div class="d-flex flex-column" style="position: absolute; left: 200px">
+        <section class="bg-primary" id="s1" style="height: 100%">
+            <p>SECTION 1</p>
+        </section>
+        <section class="bg-info" id="s2" style="height: 100%">
+            <p>SECTION 2</p>
+        </section>
+    </div>
 
-        <div class="row section">
-            <div class="btn-group-vertical col-3" id="resume">
-                <h6> Resume sections </h6>
-                <button type="button" class="btn color3 resbtn" id="edu-btn">Education</button>
-                <button type="button" class="btn color2 resbtn" id="exp-btn">Work Experience</button>
-            </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-            <div class="col-9">
-                <div class="row" id="edu">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header color3">
-                            <h5 class="card-title">University of California, Irvine (UCI)</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">March 2020—September 2020 </h6>
-                        </div>
-                        <div class="card-body">
-                            <p>Division of Continuing Education, Data Analytics Boot Camp</p>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header color3">
-                            <h5 class="card-title">University of California, San Diego (UCSD) </h5>
-                            <h6 class="card-subtitle mb-2 text-muted">September 2013—October 2019</h6>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item color3">Major: Math-Computer Science</li>
-                                <li class="list-group-item color3"> Minor: Economics </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="exp">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header color2">
-                            <h5 class="card-title">Student, UCI Data Analytics Boot Camp</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">March 2020—September 2020 </h6>
-                        </div>
-                        <div class="card-body">
-                            <p> Took part in an intensive 24 week program, completing projects using techniques used in data analytics, data visualization, data engineering and data science.</p>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header color2">
-                            <h5 class="card-title">Data Editor, UCSD Guardian</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">September 2016—June 2018</h6>
-                        </div>
-                        <div class="card-body">
-                            <p> Led data section to research stories, clean data, and visualize datasets for publication using Python libraries, including pandas, numpy, matplotlib and bokeh. Taught python programming and visualization methods to
-                                team members. Created scripts to automate visualization of frequently used datasets.</p>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header color2">
-                            <h5 class="card-title">Data Science Intern, FASTech LLC/FASTechMedia Inc.</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">January 2017—November 2017 </h6>
-                        </div>
-                        <div class="card-body">
-                            <p> Retrained an existing Netflix machine learning model emulating a person’s ability to distinguish differences in video quality. Wrote bash and python scripts automating video compression and quality tests. Produced
-                                visualizations appearing in the company’s white paper on transparency in the video compression industry. Optimized and verified the quality of a set of videos used in an online seminar by Jan Ozer, a video encoding
-                                expert.</p>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header color2">
-                            <h5 class="card-title">Market Food Service Worker, Roger’s Market (UCSD) </h5>
-                            <h6 class="card-subtitle mb-2 text-muted">September 2015–June 2016 </h6>
-                        </div>
-                        <div class="card-body">
-                            <p> Duties include customer service, preparing food and beverage, maintaining the retail sales
-                                floor, taking inventory, sanitation, cleaning, organizing the work area and maintaining logs.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <script type="text/javascript" src="conv.js"> </script>
-        <script type="text/javascript" src="logic.js"></script>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
